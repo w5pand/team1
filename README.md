@@ -38,7 +38,7 @@ git checkout <your-name>
 
 ![branch](branch.png)
 
-学员分支对照表如下（注意：若是邮件，则取 @ 之前的字符串。如 xxx@gmail.com，则分支名为 xxx）：
+学号和分支的对照表如下：
 
 ![branch names](branch_names.png)
 
