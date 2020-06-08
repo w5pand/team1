@@ -212,7 +212,6 @@ impl grandpa::Trait for Runtime {
 
 parameter_types! {
 	pub const MinimumPeriod: u64 = SLOT_DURATION / 2;
-	pub const MaxClaimLength: u32 = 6;
 }
 
 impl timestamp::Trait for Runtime {
@@ -257,9 +256,16 @@ impl sudo::Trait for Runtime {
 impl template::Trait for Runtime {
 	type Event = Event;
 }
-///poe
+
+// 附加题答案
+parameter_types! {
+	pub const MaxClaimLength: u32 = 6;
+}
+
 impl poe::Trait for Runtime {
 	type Event = Event;
+	
+	// 附加题答案
 	type MaxClaimLength = MaxClaimLength;
 }
 
